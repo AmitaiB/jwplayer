@@ -20,6 +20,7 @@ const itemContentTypes = {
     info: (item, localization) => `<button type="button" class="jw-reset-text jw-rightclick-link jw-info-overlay-item" dir="auto">${localization.videoInfo}</button>`,
     share: (item, localization) => `<button type="button" class="jw-reset-text jw-rightclick-link jw-share-item" dir="auto">${localization.sharing.heading}</button>`,
     keyboardShortcuts: (item, localization) => `<button type="button" class="jw-reset-text jw-rightclick-link jw-shortcuts-item" dir="auto">${localization.shortcuts.keyboardShortcuts}</button>`,
+    button: ({ title, button }) => `<button type="button" class="jw-reset-text jw-rightclick-link jw-${button.name}-item" dir="auto">${title}</button>`
 };
 
 
